@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Using CSS</title>
+    <style>
+
+        #base{
+            width: 600px;
+            height: 900px;
+            background-color: burlywood;
+            border-radius: 30%;
+            margin: 900px auto 0px auto;
+            position: relative;
+        }
+
+        #circle{
+            width: 300px;
+            height: 300px;
+            background-color: darkgray;
+            border-radius: 50%;
+            position: absolute;
+            top: 450px;
+            left: 150px;
+        }
+
+        #stem{
+            width: 300px;
+            height: 800px;
+            background-color: #c47f00;
+            position: absolute;
+            bottom: 900px;
+            left: 150px;
+            border-radius: 7%;
+        }
+
+        #tuning{
+            width: 300px;
+            height: 200px;
+            background-color:burlywood;
+            position: relative;
+        }
+
+        .tuner{
+            width: 125px;
+            height: 50px;
+            position: absolute; 
+        }
+
+        .t1{
+            background-color: black;
+            left: -50px;
+            top: 0px;
+        }
+
+        .t2{
+            background-color: black;
+            top: 75px;
+            left: -50px;
+        }
+
+        .t3{
+            background-color: black;
+            top: 150px;
+            left: -50px;
+        }
+
+        .t4{
+            background-color: black;
+            top: 0px;
+            right: -50px;
+        }
+
+        .t5{
+            background-color: black;
+            top: 75px;
+            right: -50px;
+        }
+
+        .t6{
+            background-color: black;
+            top: 150px;
+            right: -50px;
+        }
+
+        .string{
+            position: absolute;
+            width: 7%;
+            height: 1600px;
+            z-index: 1;
+        }
+
+        .s1{
+            background-color: black;
+            left: 55px;
+            top: 10px;
+        }
+
+        .s2{
+            background-color: black;
+            left: 88px;
+            top: 10px;
+        }
+
+        .s3{
+            background-color: black;
+            left: 122px;
+            top: 10px;
+
+        }
+
+        .s4{
+            background-color: black;
+            left: 156px;
+            top: 10px;
+
+        }
+
+        .s5{
+            background-color: black;
+            left: 190px;
+            top: 10px;
+
+        }
+
+        .s6{
+            background-color: black;
+            left: 224px;
+            top: 10px;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="base">
+        <div id="stem">
+            <div id="tuning">
+
+                <div class="tuner t1"></div>
+                <div class="tuner t2"></div>
+                <div class="tuner t3"></div>
+                <div class="tuner t4"></div>
+                <div class="tuner t5"></div>
+                <div class="tuner t6"></div>
+
+                <div class="string s1"></div>
+                <div class="string s2"></div>
+                <div class="string s3"></div>
+                <div class="string s4"></div>
+                <div class="string s5"></div>
+                <div class="string s6"></div>
+            </div>
+        </div>
+        <div id="circle"></div>
+    </div>
+
+</body>
+</html>
